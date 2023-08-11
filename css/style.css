@@ -84,7 +84,7 @@ body {
 }
 .header__logo {
   height: 3.25rem;
-  margin-left: 3.2rem;
+  margin-left: 2.4rem;
 }
 .header__search {
   flex: 0 0 40%;
@@ -132,15 +132,46 @@ body {
   fill: var(--color-grey--dark-3);
 }
 .header__nav {
-  background-color: greenyellow;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.header__nav > * {
+  padding: 0 2.4rem;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header__nav > *:hover {
+  background-color: var(--color-grey--light-2);
 }
 .header__nav__icon {
   height: 2.25rem;
   width: 2.25rem;
+  fill: var(--color-grey--dark-2);
+}
+.header__nav__icon-box {
+  position: relative;
+}
+.header__nav__notification {
+  font-size: 0.8rem;
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: #fff;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header__nav__user__photo {
   height: 3.75rem;
-  border-radius: 50%;
+  border-radius: 100px;
+  margin-right: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
