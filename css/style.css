@@ -68,11 +68,15 @@ body {
 .sidebar {
   background-color: var(--color-grey--dark-1);
   flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotel-view {
   background-color: #fff;
   background-color: orangered;
+  height: 80rem;
   flex: 1;
 }
 
@@ -158,7 +162,7 @@ body {
   font-size: 0.8rem;
   height: 1.75rem;
   width: 1.75rem;
-  border-radius: 50%;
+  border-radius: 100px;
   background-color: var(--color-primary);
   color: #fff;
   position: absolute;
@@ -172,6 +176,60 @@ body {
   height: 3.75rem;
   border-radius: 100px;
   margin-right: 1.2rem;
+}
+.sidebar__nav {
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.sidebar__nav__item {
+  position: relative;
+}
+.sidebar__nav__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: var(--color-primary);
+  transform: scaleY(0);
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
+}
+.sidebar__nav__item:hover::before {
+  transform: scaleY(1);
+  width: 100%;
+}
+.sidebar__nav__item__link:link, .sidebar__nav__item__link:visited {
+  color: var(--color-grey--light-1);
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  padding: 1.6rem 3.2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.sidebar__nav__item__link__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 2.4rem;
+  fill: currentColor;
+}
+.sidebar__nav__item--active {
+  background-color: var(--color-primary);
+}
+.sidebar__nav__item:active::before {
+  background-color: var(--color-primary--light);
+}
+.sidebar__legal {
+  font-size: 1.2rem;
+  color: var(--color-grey--light-4);
+  text-align: center;
+  padding: 2.4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
