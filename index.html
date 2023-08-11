@@ -15,7 +15,72 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">header part</header>
+      <header class="header">
+        <img src="img/logo.png" alt="Trillo logo" class="header__logo" />
+        <form action="#" class="header__search" method="post">
+          <input
+            type="text"
+            class="header__search__input"
+            placeholder="Search hotels"
+          />
+          <button class="header__search__btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              class="header__search__icon"
+            >
+              <path
+                d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"
+              ></path>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="header__nav">
+          <div class="header__nav__icon-box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              class="header__nav__icon"
+            >
+              <path
+                d="M184,32H72A16,16,0,0,0,56,48V224a8,8,0,0,0,12.24,6.78L128,193.43l59.77,37.35A8,8,0,0,0,200,224V48A16,16,0,0,0,184,32Zm0,177.57-51.77-32.35a8,8,0,0,0-8.48,0L72,209.57V48H184Z"
+              ></path>
+            </svg>
+            <span class="header__nav__notification">7</span>
+          </div>
+          <div class="header__nav__icon-box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              class="header__nav__icon"
+            >
+              <path
+                d="M216,80H184V48a16,16,0,0,0-16-16H40A16,16,0,0,0,24,48V176a8,8,0,0,0,13,6.22L72,154V184a16,16,0,0,0,16,16h93.59L219,230.22a8,8,0,0,0,5,1.78,8,8,0,0,0,8-8V96A16,16,0,0,0,216,80ZM66.55,137.78,40,159.25V48H168v88H71.58A8,8,0,0,0,66.55,137.78ZM216,207.25l-26.55-21.47a8,8,0,0,0-5-1.78H88V152h80a16,16,0,0,0,16-16V96h32Z"
+              ></path>
+            </svg>
+            <span class="header__nav__notification">13</span>
+          </div>
+
+          <div class="header__nav__user">
+            <img
+              src="img/user.jpg"
+              alt="Logo user"
+              class="header__nav__user__photo"
+            />
+            <span class="header__nav__user__name">Jonas</span>
+          </div>
+        </nav>
+      </header>
       <div class="content">
         <nav class="sidebar">navigation</nav>
         <main class="hotel-view">hotel view</main>
